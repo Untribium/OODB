@@ -1,14 +1,18 @@
 package demo;
 
-import db.Type;
+import db.*;
 
 public class Demo {
 
     public static void main(String[] args) {
         System.out.println("demo.demo");
 
-        Type t = new Type("test");
+        Database db = new Database();
+        Type t_person = db.newType("Person");
 
+        System.out.println(t_person.getName());
+
+        Instance peter = t_person.newInstance();
 
     }
 

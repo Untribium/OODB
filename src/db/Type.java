@@ -16,7 +16,7 @@ public class Type {
     }
 
     public Instance newInstance() {
-        return null;
+        return new Instance();
     }
 
     /*public Set<Instance> allInstances() {
@@ -38,8 +38,4 @@ public class Type {
     public Set<Instance> where(String attribute, Instance value) {
 
     }*/
-
-    class Instance {
-
-    }
 }
