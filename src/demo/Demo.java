@@ -8,11 +8,20 @@ public class Demo {
         System.out.println("demo.demo");
 
         Database db = new Database();
+
+        db.printTypes();
+
         Type t_person = db.newType("Person");
+        Type t_course = db.newType("Course");
 
         System.out.println(t_person.getName());
 
         Instance peter = t_person.newInstance();
+
+        System.out.println(peter.getClass().getName());
+
+        db.printTypes();
+
 
     }
 
